@@ -37,7 +37,13 @@
             display: none;
             flex-direction: column;
             position: absolute;
-            left: 50%; 
+            top: 0;
+            left: 100%; 
+        }
+
+        .menu > li > .submenu {
+            top: 100%;
+            left: 0;
         }
     </style>
 </head>
@@ -48,11 +54,25 @@
             <li>
                 <a href="">PRODUCTS</a>
                 <ul class="submenu">
-                    <li><a href="">Product 1</a></li>
+                    <li><a href="">Product 1</a>
+                        <ul class="submenu">
+                            <li><a href="">Sub Item</a>
+                            </li>
+                            <li><a href="">Sub Item</a>
+                                <ul class="submenu">
+                                    <li><a href="">Sub Item</a></li>
+                                    <li><a href="">Sub Item</a></li>                
+                                </ul></li>                
+                        </ul></li>
                     <li>
                         <a href="">Product 2</a>
                         <ul class="submenu">
-                            <li><a href="">Sub Item</a></li>
+                            <li><a href="">Sub Item</a>
+                                <ul class="submenu">
+                                    <li><a href="">Sub Item</a></li>
+                                    <li><a href="">Sub Item</a></li>                
+                                </ul>
+                            </li>
                             <li><a href="">Sub Item</a></li>                
                         </ul>
                     </li>        

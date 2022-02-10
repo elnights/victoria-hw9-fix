@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        li{
+            position: relative;
+        }
+
+        li:hover > .submenu{
+            display: flex;
+        }
+
+        a{
+            display: block;
+            text-decoration: none;
+            padding: 1em;
+            color: white;
+            background-color: black;
+        }
+
+        li:hover > a,
+        a:hover{
+            background-color: blue;
+        }
+
+        .submenu{
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            left: 50%; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="">HOME</a></li>
+            <li>
+                <a href="">PRODUCTS</a>
+                <ul class="submenu">
+                    <li><a href="">Product 1</a></li>
+                    <li>
+                        <a href="">Product 2</a>
+                        <ul class="submenu">
+                            <li><a href="">Sub Item</a></li>
+                            <li><a href="">Sub Item</a></li>                
+                        </ul>
+                    </li>        
+                </ul>
+            </li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
